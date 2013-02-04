@@ -1,0 +1,192 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         2  0.0  0.0      0     0 ?        S    Feb01   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Feb01   0:00 [ksoftirqd/0]
+root         6  0.0  0.0      0     0 ?        S    Feb01   0:00 [migration/0]
+root         7  0.0  0.0      0     0 ?        S    Feb01   0:00 [watchdog/0]
+root        21  0.0  0.0      0     0 ?        S<   Feb01   0:00 [cpuset]
+root        22  0.0  0.0      0     0 ?        S<   Feb01   0:00 [khelper]
+root        23  0.0  0.0      0     0 ?        S    Feb01   0:00 [kdevtmpfs]
+root        24  0.0  0.0      0     0 ?        S<   Feb01   0:00 [netns]
+root        26  0.0  0.0      0     0 ?        S    Feb01   0:00 [sync_supers]
+root        27  0.0  0.0      0     0 ?        S    Feb01   0:00 [bdi-default]
+root        28  0.0  0.0      0     0 ?        S<   Feb01   0:00 [kintegrityd]
+root        29  0.0  0.0      0     0 ?        S<   Feb01   0:00 [kblockd]
+root        30  0.0  0.0      0     0 ?        S<   Feb01   0:00 [ata_sff]
+root        31  0.0  0.0      0     0 ?        S    Feb01   0:00 [khubd]
+root        32  0.0  0.0      0     0 ?        S<   Feb01   0:00 [md]
+root        35  0.0  0.0      0     0 ?        S    Feb01   0:00 [khungtaskd]
+root        36  0.0  0.0      0     0 ?        S    Feb01   0:00 [kswapd0]
+root        37  0.0  0.0      0     0 ?        SN   Feb01   0:00 [ksmd]
+root        38  0.0  0.0      0     0 ?        SN   Feb01   0:00 [khugepaged]
+root        39  0.0  0.0      0     0 ?        S    Feb01   0:00 [fsnotify_mark]
+root        40  0.0  0.0      0     0 ?        S    Feb01   0:00 [ecryptfs-kthrea]
+root        41  0.0  0.0      0     0 ?        S<   Feb01   0:00 [crypto]
+root        49  0.0  0.0      0     0 ?        S<   Feb01   0:00 [kthrotld]
+root        50  0.0  0.0      0     0 ?        S    Feb01   0:00 [scsi_eh_0]
+root        51  0.0  0.0      0     0 ?        S    Feb01   0:00 [scsi_eh_1]
+root        52  0.0  0.0      0     0 ?        S    Feb01   0:00 [scsi_eh_2]
+root        53  0.0  0.0      0     0 ?        S    Feb01   0:00 [scsi_eh_3]
+root        54  0.0  0.0      0     0 ?        S    Feb01   0:00 [scsi_eh_4]
+root        55  0.0  0.0      0     0 ?        S    Feb01   0:00 [scsi_eh_5]
+root        81  0.0  0.0      0     0 ?        S<   Feb01   0:00 [devfreq_wq]
+root       267  0.0  0.0      0     0 ?        S<   Feb01   0:21 [loop0]
+root       269  0.0  0.0      0     0 ?        S    Feb01   0:01 [kjournald]
+root       645  0.0  0.0      0     0 ?        S<   Feb01   0:00 [cfg80211]
+root       653  0.0  0.0      0     0 ?        S    Feb01   0:00 [ips-adjust]
+root       654  0.0  0.0      0     0 ?        S    Feb01   0:01 [ips-monitor]
+root       656  0.0  0.0      0     0 ?        S<   Feb01   0:00 [kpsmoused]
+root       698  0.0  0.0      0     0 ?        S<   Feb01   0:00 [iwlwifi]
+root       766  0.0  0.0      0     0 ?        S<   Feb01   0:00 [hd-audio0]
+root       782  0.0  0.0      0     0 ?        S<   Feb01   0:00 [ttm_swap]
+root       788  0.0  0.0      0     0 ?        S<   Feb01   0:00 [hd-audio1]
+root       989  0.0  0.0      0     0 ?        S<   Feb01   0:00 [krfcommd]
+root      1059  0.0  0.0      0     0 ?        S    Feb01   0:00 [flush-7:0]
+root      4087  0.0  0.0      0     0 ?        S    Feb01   0:00 [flush-8:0]
+root      6973  0.0  0.0      0     0 ?        S    19:25   0:00 [migration/1]
+root      6975  0.0  0.0      0     0 ?        S    19:25   0:00 [ksoftirqd/1]
+root      6976  0.0  0.0      0     0 ?        S    19:25   0:00 [watchdog/1]
+root      6977  0.0  0.0      0     0 ?        S    19:25   0:00 [migration/2]
+root      6979  0.0  0.0      0     0 ?        S    19:25   0:00 [ksoftirqd/2]
+root      6980  0.0  0.0      0     0 ?        S    19:25   0:00 [watchdog/2]
+root      6981  0.0  0.0      0     0 ?        S    19:25   0:00 [migration/3]
+root      6983  0.0  0.0      0     0 ?        S    19:25   0:00 [ksoftirqd/3]
+root      6984  0.0  0.0      0     0 ?        S    19:25   0:00 [watchdog/3]
+root      6985  0.0  0.0      0     0 ?        S    19:25   0:00 [irq/43-mei]
+root      7013  0.0  0.0      0     0 ?        S    19:25   0:00 [kworker/1:0]
+root      8440  0.0  0.0      0     0 ?        S    20:53   0:00 [kworker/u:0]
+root      9034  0.0  0.0      0     0 ?        S    21:15   0:00 [kworker/0:0]
+root      9059  0.0  0.0      0     0 ?        S    21:16   0:00 [kworker/3:1]
+root     10143  0.0  0.0      0     0 ?        S    21:28   0:00 [kworker/2:0]
+root     10189  0.0  0.0      0     0 ?        S    21:28   0:00 [kworker/1:2]
+root     10214  0.7  0.0      0     0 ?        S    21:30   0:06 [kworker/3:0]
+root     10343  0.0  0.0      0     0 ?        S    21:31   0:00 [kworker/u:3]
+root     10488  0.0  0.0      0     0 ?        S    21:34   0:00 [kworker/0:3]
+root     10560  0.0  0.0      0     0 ?        S    21:38   0:00 [kworker/2:1]
+root     10579  0.0  0.0      0     0 ?        S    21:39   0:00 [kworker/0:1]
+root     10598  0.9  0.0      0     0 ?        S    21:41   0:01 [kworker/3:2]
+root     10625  0.0  0.0      0     0 ?        S    21:43   0:00 [kworker/u:1]
+ksh      10363  0.0  0.0   6464   296 ?        S    21:33   0:00 /usr/lib/chromium-browser/chromium-browser-sandbox /usr/lib/chromium-browser/chromium-browser --type=zygote
+ksh       9312  0.0  0.0  12492   316 ?        Ss   21:17   0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session gnome-session --session=ubuntu
+ksh       9651  0.0  0.0   5900   360 ?        S    21:18   0:00 /bin/cat
+daemon    1015  0.0  0.0  16908   380 ?        Ss   Feb01   0:00 atd
+root       723  0.0  0.0  15188   388 ?        S    Feb01   0:00 upstart-socket-bridge --daemon
+avahi      970  0.0  0.0  32180   468 ?        S    Feb01   0:00 avahi-daemon: chroot helper
+ksh       9429  0.0  0.0   4400   616 ?        Ss   21:17   0:00 /bin/sh -c /usr/bin/compiz-decorator
+root       360  0.0  0.0  17232   636 ?        S    Feb01   0:00 upstart-udev-bridge --daemon
+root      1019  0.0  0.0  15980   688 ?        Ss   Feb01   0:02 /usr/sbin/irqbalance
+ksh       8490  0.0  0.0  45592   700 ?        Ss   20:59   0:00 ssh -f khiga1@my.cs.lmu.edu -L 8888:10.5.64.77:80 -N
+ksh       9315  0.0  0.0  26556   784 ?        S    21:17   0:00 /usr/bin/dbus-launch --exit-with-session gnome-session --session=ubuntu
+root      1808  0.0  0.0  45520   796 ?        S    Feb01   0:00 udisks-daemon: not polling any devices
+ksh       9537  0.0  0.0  14788   832 ?        S    21:17   0:00 gnome-pty-helper
+ksh       9352  0.0  0.0  20176   932 ?        S    21:17   0:00 syndaemon -i 2.0 -K -R -t
+root      1006  0.0  0.0   4592   952 ?        Ss   Feb01   0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root       981  0.0  0.0  14504   968 tty4     Ss+  Feb01   0:00 /sbin/getty -8 38400 tty4
+root       987  0.0  0.0  14504   968 tty5     Ss+  Feb01   0:00 /sbin/getty -8 38400 tty5
+root       999  0.0  0.0  14504   968 tty2     Ss+  Feb01   0:00 /sbin/getty -8 38400 tty2
+root      1002  0.0  0.0  14504   968 tty6     Ss+  Feb01   0:00 /sbin/getty -8 38400 tty6
+root      1784  0.0  0.0  14504   968 tty1     Ss+  Feb01   0:00 /sbin/getty -8 38400 tty1
+root      1000  0.0  0.0  14504   980 tty3     Ss+  Feb01   0:00 /sbin/getty -8 38400 tty3
+root      1014  0.0  0.0  19112  1008 ?        Ss   Feb01   0:00 cron
+root      7030  0.0  0.0  21764  1132 ?        S    19:25   0:00 /sbin/udevd --daemon
+root      7029  0.0  0.0  21764  1232 ?        S    19:25   0:00 /sbin/udevd --daemon
+ksh      10631  0.0  0.0  16992  1240 pts/4    R+   21:44   0:00 ps aux --sort %mem
+nobody    7429  0.0  0.0  27540  1300 ?        S    19:25   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.0.1 --conf-file=/var/run/nm-dns-dnsmasq.conf --cache-size=0 --proxy-dnssec
+rtkit     1479  0.0  0.0 168872  1356 ?        SNl  Feb01   0:00 /usr/lib/rtkit/rtkit-daemon
+syslog     866  0.0  0.0 249472  1428 ?        Sl   Feb01   0:01 rsyslogd -c5
+root      7374  0.0  0.0   7264  1552 ?        S    19:25   0:00 /sbin/dhclient -d -4 -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /var/run/sendsigs.omit.d/network-manager.dhclient-wlan0.pid -lf /var/lib/dhcp/dhclient-c319604f-f752-4bb4-9b3b-ab117062976a-wlan0.lease -cf /var/run/nm-dhclient-wlan0.conf wlan0
+postgres  1522  0.0  0.0 126412  1568 ?        Ss   Feb01   0:01 postgres: wal writer process                                                                                                
+root       368  0.0  0.0  21756  1588 ?        Ss   Feb01   0:00 /sbin/udevd --daemon
+postgres  1524  0.0  0.0  94788  1644 ?        Ss   Feb01   0:00 postgres: stats collector process                                                                                           
+root       939  0.0  0.0  21188  1720 ?        Ss   Feb01   0:00 /usr/sbin/bluetoothd
+postgres  1521  0.0  0.0 126412  1816 ?        Ss   Feb01   0:02 postgres: writer process                                                                                                    
+ksh       8596  0.0  0.0  26064  1844 ?        Ss   21:09   0:00 SCREEN
+root         1  0.0  0.0  24448  2440 ?        Ss   Feb01   0:01 /sbin/init
+ksh       9335  0.0  0.0  46900  2464 ?        S    21:17   0:00 /usr/lib/gvfs/gvfsd
+ksh       9357  0.0  0.0  40932  2476 ?        S    21:17   0:00 /usr/lib/gvfs/gvfsd-metadata
+ksh       9382  0.0  0.0  54856  2484 ?        S    21:17   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ksh       9377  0.0  0.0 136596  2516 ?        Sl   21:17   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+root      1073  0.0  0.0  31824  2580 ?        Ss   Feb01   0:02 /sbin/wpa_supplicant -B -P /run/sendsigs.omit.d/wpasupplicant.pid -u -s -O /var/run/wpa_supplicant
+ksh       9393  0.0  0.0  47060  2628 ?        S    21:17   0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.6 /org/gtk/gvfs/exec_spaw/1
+ksh       9483  0.0  0.0  47860  2712 ?        S    21:17   0:00 /usr/lib/geoclue/geoclue-master
+102        909  0.0  0.0  25800  2728 ?        Ss   Feb01   0:09 dbus-daemon --system --fork --activation=upstart
+ksh       9994  0.0  0.0 262088  2764 ?        Sl   21:18   0:00 /usr/lib/dconf/dconf-service
+ksh       9337  0.0  0.0 273444  2840 ?        Sl   21:17   0:00 /usr/lib/gvfs//gvfs-fuse-daemon -f /home/ksh/.gvfs
+postgres  1523  0.0  0.0 127136  2948 ?        Ss   Feb01   0:00 postgres: autovacuum launcher process                                                                                       
+root       922  0.0  0.0  79044  3172 ?        Ss   Feb01   0:00 /usr/sbin/modem-manager
+ksh       1734  0.0  0.0  95984  3248 ?        S    Feb01   0:00 /usr/lib/pulseaudio/pulse/gconf-helper
+ksh       9389  0.0  0.0  51588  3256 ?        S    21:17   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.6 /org/gtk/gvfs/exec_spaw/0
+ksh      10155  0.0  0.0 203964  3464 ?        Sl   21:28   0:00 /usr/lib/libreoffice/program/oosplash --writer
+ksh       9355  0.0  0.0  52260  3488 ?        S    21:17   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+ksh       9316  0.1  0.0  27676  3492 ?        Ss   21:17   0:02 //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+root      1016  0.0  0.0 270664  3532 ?        Ssl  Feb01   0:00 lightdm
+root      9181  0.0  0.0 156772  3544 ?        Sl   21:17   0:00 lightdm --session-child 12 25
+ksh       9369  0.0  0.0  64820  3652 ?        S    21:17   0:00 /usr/lib/gvfs/gvfs-gdu-volume-monitor
+root      1093  0.0  0.0 121532  3756 ?        Sl   Feb01   0:00 /usr/lib/accountsservice/accounts-daemon
+ksh       9266  0.0  0.0 370400  3756 ?        Sl   21:17   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+ksh      10042  0.0  0.0 289484  3888 ?        Sl   21:19   0:00 /usr/lib/deja-dup/deja-dup/deja-dup-monitor
+root      1110  0.0  0.0 2091636 3964 ?        Sl   Feb01   0:01 /usr/sbin/console-kit-daemon --no-daemon
+root      1806  0.0  0.0 193404  3968 ?        Sl   Feb01   0:00 /usr/lib/udisks/udisks-daemon
+root       975  0.0  0.0 104104  4200 ?        Ss   Feb01   0:00 /usr/sbin/cupsd -F
+ksh       9666  0.0  0.0 384328  4324 ?        Sl   21:18   0:00 /usr/lib/unity-lens-music/unity-musicstore-daemon
+root      1276  0.0  0.0 219924  4612 ?        Sl   Feb01   0:01 /usr/lib/upower/upowerd
+root      1064  0.0  0.0 195436  4652 ?        Sl   Feb01   0:02 /usr/lib/policykit-1/polkitd --no-debug
+whoopsie  1067  0.0  0.0 204252  5136 ?        Ssl  Feb01   0:02 whoopsie
+ksh       9448  0.0  0.0 495376  5152 ?        Sl   21:17   0:00 /usr/lib/indicator-application/indicator-application-service
+ksh       9538  0.0  0.0  22788  5316 pts/4    Ss   21:17   0:00 bash
+ksh       8597  0.0  0.0  22832  5352 pts/1    Ss+  21:09   0:00 /bin/bash
+ksh       8659  0.0  0.0  22832  5356 pts/2    Ss+  21:10   0:00 /bin/bash
+ksh       8758  0.0  0.0  22832  5356 pts/3    Ss+  21:15   0:00 /bin/bash
+ksh       9487  0.0  0.0 160904  5704 ?        S    21:17   0:00 /usr/lib/ubuntu-geoip/ubuntu-geoip-provider
+ksh       9632  0.0  0.0 348868  5708 ?        Sl   21:18   0:00 /usr/bin/zeitgeist-daemon
+ksh       9602  0.0  0.1 417824  6112 ?        Sl   21:18   0:00 zeitgeist-datahub
+root      1041  0.0  0.1 232800  6212 ?        Ssl  Feb01   0:06 NetworkManager
+avahi      963  1.0  0.1  37116  6344 ?        S    Feb01  36:47 avahi-daemon: running [ubuntu.local]
+ksh       9436  0.0  0.1 662464  6360 ?        Sl   21:17   0:00 /usr/lib/indicator-session/indicator-session-service
+ksh      10361  0.0  0.1 246752  6516 ?        S    21:33   0:00 /usr/lib/chromium-browser/chromium-browser
+ksh       1729  0.0  0.1 437732  6532 ?        Sl   Feb01   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+ksh       9440  0.0  0.1 444548  6688 ?        Sl   21:17   0:00 /usr/lib/indicator-messages/indicator-messages-service
+ksh       9606  0.0  0.1 805740  6692 ?        Sl   21:18   0:00 /usr/lib/unity-lens-files/unity-files-daemon
+ksh       9449  0.0  0.1 524256  6972 ?        Sl   21:17   0:00 /usr/lib/indicator-sound/indicator-sound-service
+ksh       9513  0.0  0.1 321812  7192 ?        Sl   21:17   0:00 /usr/lib/telepathy/mission-control-5
+ksh       9416  0.3  0.1 696724  7284 ?        Sl   21:17   0:05 /usr/lib/indicator-appmenu/hud-service
+ksh       9442  0.0  0.1 691036  7428 ?        Sl   21:17   0:00 /usr/lib/indicator-datetime/indicator-datetime-service
+ksh       9609  0.0  0.1 667392  8368 ?        Sl   21:18   0:00 /usr/lib/unity-lens-music/unity-music-daemon
+ksh       9361  0.0  0.1 302180  8584 ?        Sl   21:17   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ksh       9362  0.0  0.1 449576  8816 ?        Sl   21:17   0:00 /usr/lib/gnome-settings-daemon/gnome-fallback-mount-helper
+ksh       9601  0.0  0.1 304676  9184 ?        Sl   21:18   0:00 gnome-screensaver
+ksh       9649  0.0  0.1 245716  9184 ?        Sl   21:18   0:00 /usr/lib/zeitgeist/zeitgeist-fts
+ksh       9503  0.0  0.1 326300  9236 ?        Sl   21:17   0:00 /usr/lib/gnome-disk-utility/gdu-notification-daemon
+ksh       9277  0.0  0.1 389288  9832 ?        Ssl  21:17   0:00 gnome-session --session=ubuntu
+ksh       9438  0.0  0.1 418284 10140 ?        Sl   21:17   0:00 /usr/lib/indicator-printers/indicator-printers-service
+postgres  1081  0.0  0.1 126428 10176 ?        S    Feb01   0:00 /usr/lib/postgresql/9.1/bin/postgres -D /var/lib/postgresql/9.1/main -c config_file=/etc/postgresql/9.1/main/postgresql.conf
+ksh       9507  0.0  0.1 424068 11036 ?        Sl   21:17   0:00 telepathy-indicator
+ksh       9604  0.0  0.1 411300 11500 ?        Sl   21:18   0:00 /usr/lib/unity-lens-applications/unity-applications-daemon
+ksh       9395  0.0  0.1 388816 11696 ?        Sl   21:17   0:01 /usr/lib/bamf/bamfdaemon
+colord    1439  0.0  0.2 500068 11844 ?        Sl   Feb01   0:00 /usr/lib/x86_64-linux-gnu/colord/colord
+ksh       9358  0.0  0.2 429152 12284 ?        Sl   21:17   0:00 bluetooth-applet
+root      2294  0.0  0.2  95328 12312 ?        S    Feb01   0:00 /usr/bin/python /usr/lib/system-service/system-service-d
+ksh       9430  0.0  0.2 315704 12632 ?        Sl   21:17   0:00 /usr/bin/gtk-window-decorator
+ksh       9973  0.0  0.2 401480 13056 ?        Sl   21:18   0:00 update-notifier
+ksh       9518  0.0  0.2 400172 13736 ?        Sl   21:17   0:00 /usr/lib/gnome-online-accounts/goa-daemon
+ksh       9610  0.0  0.2 361844 16092 ?        Sl   21:18   0:00 /usr/bin/python /usr/lib/unity-lens-video/unity-lens-video
+ksh      10364  0.0  0.2 269904 16300 ?        S    21:33   0:00 /usr/lib/chromium-browser/chromium-browser --type=zygote
+root       260  0.0  0.2  31188 16632 ?        Ss   Feb01   1:34 mount.ntfs /dev/disk/by-uuid/026EFFF36EFFDD7B /root
+ksh       9360  0.0  0.2 497752 16912 ?        Sl   21:17   0:00 nm-applet
+ksh       9528  0.2  0.2 520228 17704 ?        Sl   21:17   0:04 gnome-terminal
+ksh       9668  0.0  0.3 531752 18056 ?        Sl   21:18   0:00 /usr/bin/python /usr/lib/unity-scope-video-remote/unity-scope-video-remote
+ksh       9324  0.0  0.3 826968 18580 ?        Sl   21:17   0:01 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+ksh      10458  0.0  0.3 314572 21380 ?        Sl   21:33   0:00 /usr/lib/chromium-browser/chromium-browser --type=gpu-process --channel=10357.3.265953919
+ksh      10395  0.0  0.4 851072 23792 ?        Sl   21:33   0:00 /usr/lib/chromium-browser/chromium-browser --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/Instant/SILENT/OmniboxPrerenderHitWeightingTrial/OmniboxPrerenderWeight1.0/OmniboxSearchSuggest/3/Prefetch/ContentPrefetchPrefetchOff/Prerender/ContentPrefetchPrerender1/ProxyConnectionImpact/proxy_connections_32/SpdyCwnd/cwndMin10/SpdyImpact/spdy3/UMA-Uniformity-Trial-1-Percent/group_49/UMA-Uniformity-Trial-10-Percent/group_03/UMA-Uniformity-Trial-20-Percent/group_04/UMA-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/last_accessed_socket/WebStoreLinkExperiment/FooterLink/ --extension-process --disable-accelerated-2d-canvas --channel=10357.1.739594159
+ksh       9413  0.4  0.4 529524 24796 ?        Sl   21:17   0:07 /usr/lib/unity/unity-panel-service
+root      9100  2.0  0.4 150920 29332 tty7     Ss+  21:17   0:32 /usr/bin/X :0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+ksh       9802  0.2  0.6 778336 35768 ?        SLl  21:18   0:03 /usr/bin/python /usr/bin/gwibber-service
+ksh       9363  0.7  0.6 1362416 38480 ?       Sl   21:17   0:12 nautilus -n
+ksh       9848  0.0  0.6 399552 39364 ?        Sl   21:18   0:01 /usr/bin/python /usr/lib/ubuntuone-client/ubuntuone-syncdaemon
+ksh      10609 18.9  1.0 502128 61868 ?        Sl   21:42   0:24 /usr/lib/chromium-browser/chromium-browser --type=plugin --plugin-path=/usr/lib/flashplugin-installer/libflashplayer.so --lang=en-US --channel=10357.18.1857764092
+tomcat7   1670  0.0  1.2 1892492 75872 ?       Sl   Feb01   0:17 /usr/lib/jvm/default-java/bin/java -Djava.util.logging.config.file=/var/lib/tomcat7/conf/logging.properties -Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.endorsed.dirs=/usr/share/tomcat7/endorsed -classpath /usr/share/tomcat7/bin/bootstrap.jar:/usr/share/tomcat7/bin/tomcat-juli.jar -Dcatalina.base=/var/lib/tomcat7 -Dcatalina.home=/usr/share/tomcat7 -Djava.io.tmpdir=/tmp/tomcat7-tomcat7-tmp org.apache.catalina.startup.Bootstrap start
+ksh      10581  2.7  1.3 899204 77008 ?        Sl   21:41   0:05 /usr/lib/chromium-browser/chromium-browser --type=renderer --lang=en-US --force-fieldtrials=ConnCountImpact/conn_count_6/ConnnectBackupJobs/ConnectBackupJobsEnabled/DnsImpact/default_enabled_prefetch/GlobalSdch/global_enable_sdch/IdleSktToImpact/idle_timeout_10/Instant/SILENT/OmniboxPrerenderHitWeightingTrial/OmniboxPrerenderWeight1.0/OmniboxSearchSuggest/3/Prefetch/ContentPrefetchPrefetchOff/Prerender/ContentPrefetchPrerender1/PrerenderFromOmnibox/OmniboxPrerenderEnabled/ProxyConnectionImpact/proxy_connections_32/SpdyCwnd/cwndMin10/SpdyImpact/spdy3/UMA-Uniformity-Trial-1-Percent/group_49/UMA-Uniformity-Trial-10-Percent/group_03/UMA-Uniformity-Trial-20-Percent/group_04/UMA-Uniformity-Trial-5-Percent/group_13/UMA-Uniformity-Trial-50-Percent/default/WarmSocketImpact/last_accessed_socket/WebStoreLinkExperiment/FooterLink/ --disable-accelerated-2d-canvas --channel=10357.15.1754453199
+ksh       9688  0.6  1.4 953044 84624 ?        Sl   21:18   0:10 /usr/bin/perl /usr/bin/shutter
+ksh       9345  2.1  1.4 1316384 87608 ?       Sl   21:17   0:35 compiz
+ksh       9988  0.4  1.5 657020 93252 ?        SNl  21:18   0:07 /usr/bin/python /usr/bin/update-manager --no-focus-on-map
+ksh      10357  2.2  1.7 603924 105328 ?       SLl  21:33   0:14 /usr/lib/chromium-browser/chromium-browser
+ksh      10173  0.4  1.7 1189184 105484 ?      Sl   21:28   0:04 /usr/lib/libreoffice/program/soffice.bin --writer --splash-pipe=6
