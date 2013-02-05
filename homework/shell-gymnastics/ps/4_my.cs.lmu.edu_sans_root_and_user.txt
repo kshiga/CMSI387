@@ -1,0 +1,30 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+syslog     657  0.0  0.1 185760  5528 ?        Sl    2012  11:07 rsyslogd -c5
+statd      666  0.0  0.0  25612  1492 ?        Ss    2012   0:00 rpc.statd -L
+102        677  0.0  0.0  24160   368 ?        Ss    2012   0:00 dbus-daemon --system --fork --activation=upstart
+daemon     803  0.0  0.0  16784   400 ?        Ss    2012   0:00 atd
+postfix   1057  0.0  0.0  27224  1732 ?        S     2012   0:06 qmgr -l -t fifo -u
+1000      1160  0.0  0.2  29988  9016 tty1     S     2012   0:00 -bash
+1000      1288  0.1  0.0  22404  2396 tty1     S+    2012 390:26 top
+www-data  2303  0.0  0.2 202744  9284 ?        S    19:43   0:00 /usr/sbin/apache2 -k start
+tmoore19  2881  0.0  0.0  73348  1860 ?        S    20:26   0:00 sshd: tmoore19@pts/1
+tmoore19  2882  0.0  0.2  30024  9284 pts/1    Ss+  20:26   0:00 -bash
+mysql     4807  0.0  0.7 236892 28684 ?        Ssl   2012  18:11 /usr/sbin/mysqld
+akerawa2  5518  0.0  0.0  73072  2000 ?        S    21:16   0:00 sshd: akerawa2@pts/2
+akerawa2  5519  0.0  0.2  30148  9460 pts/2    Ss+  21:16   0:00 -bash
+postfix   5791  0.0  0.0  27012  1604 ?        S    21:30   0:00 pickup -l -t fifo -u -c
+awon      7957  0.0  0.0  26904  1236 ?        Ss   Jan29   0:00 SCREEN
+awon      7958  0.0  0.1  25988  5176 pts/0    Ss+  Jan29   0:00 /bin/bash
+www-data  9270  0.0  0.2 203900 12120 ?        S    06:25   0:00 /usr/sbin/apache2 -k start
+www-data  9271  0.0  0.3 203928 12228 ?        S    06:25   0:00 /usr/sbin/apache2 -k start
+www-data  9272  0.0  0.2 203900 12112 ?        S    06:25   0:00 /usr/sbin/apache2 -k start
+awon      9563  0.0  0.0  26904  1240 ?        Ss   Jan29   0:00 SCREEN
+awon      9564  0.0  0.1  25988  5172 pts/6    Ss+  Jan29   0:00 /bin/bash
+www-data 10542  0.0  0.2 203892 12104 ?        S    07:23   0:00 /usr/sbin/apache2 -k start
+www-data 10810  0.0  0.2 203900 12112 ?        S    08:10   0:00 /usr/sbin/apache2 -k start
+www-data 10811  0.0  0.2 203892 12104 ?        S    08:10   0:00 /usr/sbin/apache2 -k start
+mongodb  13594  0.0  0.4 305244 19544 ?        Ssl   2012 145:32 /usr/bin/mongod --config /etc/mongodb.conf
+www-data 22244  0.0  0.2 203376 11588 ?        S    14:38   0:00 /usr/sbin/apache2 -k start
+postfix  22806  0.0  0.0  38092  3236 ?        S     2012   0:02 tlsmgr -l -t unix -u -c
+www-data 25097  0.0  0.3 204440 12476 ?        S    15:12   0:00 /usr/sbin/apache2 -k start
+www-data 27563  0.0  0.2 203884 12076 ?        S    17:02   0:00 /usr/sbin/apache2 -k start
