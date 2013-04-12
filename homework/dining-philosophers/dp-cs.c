@@ -1,13 +1,14 @@
 /**
  * Implementation (and privates) for critical-section functions.
  */
-//#include "dp-cs.h"
+#include "dp-cs.h"
 #include "chopstick.h"
 
 #include <stdio.h>
 #include <string.h>
 
-int table[5] = {[0 ... 4] = 1};
+
+static chopstick table[CHOPSTICK_COUNT] = {1, 1, 1, 1, 1 };
 
 void display_table(const char *chopstickAction, int avaliable, int chopstickCurrent) {
     char display[CHOPSTICK_COUNT * (ITEM_WIDTH + 1) + 64]; //display
@@ -29,7 +30,8 @@ void display_table(const char *chopstickAction, int avaliable, int chopstickCurr
 
 }
 
-int get_chopstick(int chopstick) {
+
+int get_chopstick(chopstick chopstick) {
     const char *chopstickAction = "took";
     if(table[chopstick] == 0){
         printf("*** CRITICAL SECTION VIOLATION ***\n");
@@ -42,7 +44,7 @@ int get_chopstick(int chopstick) {
     return 0;
 }
 
-int drop_chopstick(int chopstick){
+int drop_chopstick(chopstick chopstick){
     const char *chopstickAction = "put back";
     if(table[chopstick] == 1){
         printf("*** CRITICAL SECTION VIOLATION ***\n");

@@ -9,11 +9,11 @@
 /**
  * Gets the chopstick.
  */
-int get_chopstick(int chopstick)
+int get_chopstick(chopstick chopstick);
 
 /**
  * Puts down the chopstick.
  */
-int drop_chopstick(int chopstick)
+int drop_chopstick(chopstick chopstick);
     
 #endif

@@ -6,8 +6,6 @@
 
 #include "dp-sync.h"
 
-/* Defining philospher */
-
 void *philosopher(int chopstickRight);
 
 /**
@@ -15,7 +13,7 @@ void *philosopher(int chopstickRight);
  */
 void *philospherRunner(void *arg) {
     philosopher((int)arg);
-    printf("philsopher at seat %d , Activated!\n", (int)arg);
+    printf("philsopher Activated!\n");
     pthread_exit(NULL);
 }
 /**

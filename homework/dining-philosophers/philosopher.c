@@ -8,15 +8,12 @@
 
 #include <pthread.h>
 #include <semaphore.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 static char chopsticksName[] = {'A', 'B', 'C', 'D', 'E'};
 static char *philosopherName[] = {"Kant", "Heidegger", "Socrates", "Beauvoir", "Descartes"};
 static pthread_mutex_t * chopsticksMutex[] = { &cA, &cB, &cC, &cD, &cE};
-
-
-
 
 void philosopher(int chopstickRight) {
     char *name = philosopherName[chopstickRight];
