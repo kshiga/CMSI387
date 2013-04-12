@@ -1,67 +1,56 @@
 /**
  * Implementation (and privates) for critical-section functions.
  */
-#include "dp-cs.h"
+//#include "dp-cs.h"
 #include "chopstick.h"
 
 #include <stdio.h>
 #include <string.h>
 
-static int avaliable = 1;
-static int taken = 0;
-static int table[CHOPSTICK_COUNT];
+int table[5] = {[0 ... 4] = 1};
 
-void display_table(const char *chopstickAction, int taking, int chopstickName) {
-    char display[CHOPSTICK_COUNT]
-
-}
-
-
-void display_buffer(const char *preface, int in, int out) {
-    char display[BUFFER_SIZE * (ITEM_WIDTH + 1) + 64];
-    char buffer_content[ITEM_WIDTH + 1];
-    sprintf(display, "(%s) in: %d out: %d [ ", preface, in, out);
+void display_table(const char *chopstickAction, int avaliable, int chopstickCurrent) {
+    char display[CHOPSTICK_COUNT * (ITEM_WIDTH + 1) + 64]; //display
+    char chopstick[ITEM_WIDTH + 1];//individual item to be displayed
+    sprintf(display, "%s chopstick at position %d [ ", chopstickAction, chopstickCurrent);
     int i;
-    for (i = 0; i < BUFFER_SIZE; i++) {
-        sprintf(buffer_content, "%d", buffer[i]);
+    for (i = 0; i < CHOPSTICK_COUNT; i++) {
+        sprintf(chopstick, "%d ", table[i]);
 
-        if (i == in) {
-            strcat(display, "+>");
+        if (i == chopstickCurrent && !avaliable) {
+            strcat(display, "! taking >");
+        } else if (i == chopstickCurrent && avaliable){
+            strcat(display, "! dropping >");
         }
-        strcat(display, buffer_content);
-
-        if (i == out) {
-            strcat(display, "->");
-        }
-        strcat(display, " ");
+        strcat(display, chopstick);
     }
     strcat(display, "]\n");
     printf("%s", display);
+
 }
 
-
-int get_chopstick(int chopstick){
-    const char * chopstickAction = "took";
-    if(table[chopstick] == taken){
+int get_chopstick(int chopstick) {
+    const char *chopstickAction = "took";
+    if(table[chopstick] == 0){
         printf("*** CRITICAL SECTION VIOLATION ***\n");
         printf("*** THIS CHOPSTICK IS NOT ON THE TABLE ***\n");
         return -1;
     }    
-    table[chopstick] = taken;
-    display_table(chopstickAction, taken, chopstick);
+    table[chopstick] = 0;
+    display_table(chopstickAction, 0, chopstick);
 
     return 0;
 }
 
 int drop_chopstick(int chopstick){
-    const char * chopstickAction = "put back";
-    if(table[chopstick] == avaliable){
+    const char *chopstickAction = "put back";
+    if(table[chopstick] == 1){
         printf("*** CRITICAL SECTION VIOLATION ***\n");
         printf("*** THIS CHOPSTICK IS ALREADY ON THE TABLE ***\n");
         return -1;
     }
-    table[chopstick] = available;   
-    display_table(chopstickAction, avaliable, chopstick);
+    table[chopstick] = 1;   
+    display_table(chopstickAction, 1, chopstick);
       
     return 0;
 }

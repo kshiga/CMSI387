@@ -10,9 +10,7 @@
 /**
 * Locks for each individual chopstick
 */
-pthread_mutex_t chopsticksMutex = {cA, cB, cC, cD, cE};
-
-const char * chopsticksName["A", "B", "C", "D", "E"];
+pthread_mutex_t cA, cB, cC, cD, cE;
 
 /**
  * Initializes synchronization primitives.

@@ -8,14 +8,14 @@
 
 /* Defining philospher */
 
-void *philospher(int chopstickRight);
+void *philosopher(int chopstickRight);
 
 /**
  * Thread runner for the philosopher.
  */
 void *philospherRunner(void *arg) {
-    produce((int)arg);
-    printf("philsopher at seat %d , Activated!\n", arg);
+    philosopher((int)arg);
+    printf("philsopher at seat %d , Activated!\n", (int)arg);
     pthread_exit(NULL);
 }
 /**
@@ -28,11 +28,11 @@ int main(int argc, char** argv) {
     initSync();
 
     /* Start the threads. */
-    pthread_t kant, heidegger, socrates, beauvoir, descartes
+    pthread_t kant, heidegger, socrates, beauvoir, descartes;
     pthread_create(&kant, NULL, philospherRunner, (void *)0);
     pthread_create(&heidegger, NULL, philospherRunner, (void *)1);
     pthread_create(&socrates, NULL, philospherRunner, (void *)2);
-    pthread_create(&bearuvoir, NULL, philospherRunner, (void *)3);
+    pthread_create(&beauvoir, NULL, philospherRunner, (void *)3);
     pthread_create(&descartes, NULL, philospherRunner, (void *)4);
 
 
