@@ -8,7 +8,7 @@
 #include <string.h>
 
 
-static chopstick table[CHOPSTICK_COUNT] = {1, 1, 1, 1, 1 };
+static chopstick table[CHOPSTICK_COUNT] = {1, 1, 1, 1, 1};
 
 void display_table(const char *chopstickAction, int avaliable, int chopstickCurrent) {
     char display[CHOPSTICK_COUNT * (ITEM_WIDTH + 1) + 64]; //display
