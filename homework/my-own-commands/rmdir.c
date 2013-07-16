@@ -1,4 +1,10 @@
-
+/**
+ * This program demonstrates invocation of the rmdir
+ * system call (84) using the syscall function.
+ *
+ * Note: System call numbers are for 64-bit Linux Systems
+ */
+ 
 #include <linux/types.h>
 #include <linux/unistd.h>
 #include <string.h>
