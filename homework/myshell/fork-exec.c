@@ -10,12 +10,14 @@
 int main() {
     int running = 0;
     int maxcomp = 256;
+    int changedir = 0;
     const int MAX_INPUT = 4096;
     const int MAX_COMM = 256;
     const int MAX_ARGS = 3840;
     const char *exit = "exit";
     const char *cd = "cd";
     const char *and = "&";
+
 
     char input[MAX_INPUT];
     char command[MAX_COMM];
@@ -36,7 +38,7 @@ int main() {
         
         printf("Enter the command to run: ");
         fgets(input, MAX_INPUT, stdin);
-        printf("input: %s\n", input);
+        //printf("input: %s\n", input);
         parse = strchr(input, ' ');
         
         
@@ -53,7 +55,7 @@ int main() {
             
             }
             
-            printf("arguments: \"%s\"\n", arguments);
+            //printf("arguments: \"%s\"\n", arguments);
             strncpy(command, (const char *)input, (spaceloc -1));
         }
         
@@ -64,11 +66,14 @@ int main() {
 
         if (!strcmp(command, exit)) {
            running = 1;
-           printf("running is now %d\n", running);
         }
         
         if(!strncmp((const char *)command, cd, maxcomp)){
-            printf("command %s matched cd!\n", command);
+            changedir = chdir(argumentsin);
+            if(changedir){
+                printf("Unable to change to specified directory.");
+            }
+            
         } 
 
 
