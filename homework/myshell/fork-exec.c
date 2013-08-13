@@ -7,10 +7,18 @@
  * This program demonstrates the use of the fork() and exec()
  * functions.
  */
+ 
+
 int main() {
     int running = 0;
     int maxcomp = 256;
     int changedir = 0;
+    int spaceloc = 0;
+    int numspace = 0;
+    int i = 1;
+    int bg = 0;
+
+
     const int MAX_INPUT = 4096;
     const int MAX_COMM = 256;
     const int MAX_ARGS = 3840;
@@ -25,9 +33,8 @@ int main() {
     char *arg;
     char argumentsin[MAX_ARGS];
     char *parse;
-    int spaceloc = 0;
-    int numspace = 0;
-    int i = 1;
+
+
 
     while (!running){
         i = 1;    
@@ -50,17 +57,21 @@ int main() {
             
             while(arg != NULL){
                 argv[i] = arg;
-                printf("argument: \"%s\"\n argv[%d]: \"%s\" \n", arg, i, argv[i]);
                 arg = strtok(NULL, " ");
+                if (!strcmp((const char*)argv[i], and)){ 
+                    bg = 1;
+                    argv[i] = NULL;
+                    break;
+                }
                 i++;                
             }
-            argv[i+1] = NULL;
-                        
+            
+            argv[i+1] = NULL;                        
             strncpy(command, (const char *)input, (spaceloc -1));
         }
         
         pid_t pid;
-
+        pid_t pidBG;
         if (!strcmp(command, exit)) {
            running = 1;
         }
@@ -72,7 +83,7 @@ int main() {
             }
             
         } 
-
+        
 
 
         pid = fork();
@@ -80,6 +91,20 @@ int main() {
             fprintf(stderr, "Fork failed\n");
             return -1;
         } else if (pid == 0) {
+            if(bg){
+                pidBG = fork();
+                if(pidBG < 0){
+                    fprintf(stderr, "Fork failed\n");
+                } else if (pidBG == 0) {
+                    main();
+                    if(strcmp(argumentsin, "")){
+                        execvp(command, (char * const*)argv);
+                    } else {
+                        execlp(command, command, NULL);
+                    }
+                } 
+            }
+            
             if(strcmp(argumentsin, "")){
                 execvp(command, (char * const*)argv);
             } else {
