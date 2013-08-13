@@ -18,7 +18,6 @@ int main() {
     int i = 1;
     int bg = 0;
 
-
     const int MAX_INPUT = 4096;
     const int MAX_COMM = 256;
     const int MAX_ARGS = 3840;
@@ -27,21 +26,18 @@ int main() {
     const char *and = "&";
     const char *argv[MAX_ARGS];
 
-
     char input[MAX_INPUT];
     char command[MAX_COMM];
     char *arg;
     char argumentsin[MAX_ARGS];
     char *parse;
 
-
-
     while (!running){
         i = 1;    
         memset(input, '\0', MAX_INPUT);
         memset(command, '\0', MAX_COMM);
         memset(argumentsin, '\0', MAX_ARGS);
-        
+
         printf("Enter the command to run: ");
         fgets(input, MAX_INPUT, stdin);
         parse = strchr(input, ' ');      
@@ -72,16 +68,15 @@ int main() {
         
         pid_t pid;
         pid_t pidBG;
+        
         if (!strcmp(command, exit)) {
            running = 1;
         }
-        
         if(!strncmp((const char *)command, cd, maxcomp)){
-            changedir = chdir(argv[2]);
+            changedir = chdir(argumentsin);
             if(changedir){
                 printf("Unable to change to specified directory.");
             }
-            
         } 
         
 
