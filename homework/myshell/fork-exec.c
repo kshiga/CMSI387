@@ -8,7 +8,7 @@
  * functions.
  */
 int main() {
-    int running = 1;
+    int running = 0;
     int maxcomp = 256;
     const int MAX_INPUT = 4096;
     const int MAX_COMM = 256;
@@ -19,19 +19,24 @@ int main() {
 
     char input[MAX_INPUT];
     char command[MAX_COMM];
+    char *arg;
+    char argumentsin[MAX_ARGS];
     char arguments[MAX_ARGS];
     char *parse;
     int spaceloc = 0;
+    int numspace = 0;
+    int i = 0;
 
-    while (running){
+    while (!running){
     
         memset(input, '\0', MAX_INPUT);
         memset(command, '\0', MAX_COMM);
-        memset(arguments, '\0', MAX_ARGS);
+        memset(argumentsin, '\0', MAX_ARGS);
 
         
         printf("Enter the command to run: ");
         fgets(input, MAX_INPUT, stdin);
+        printf("input: %s\n", input);
         parse = strchr(input, ' ');
         
         
@@ -40,7 +45,15 @@ int main() {
             strncpy(command, (const char *)input, ((int)strlen(input) - 1)); 
         } else {
             spaceloc = (int)(parse - input + 1);
-            strncpy(arguments, (const char *)parse, ((int)strlen(parse)-1));
+            strncpy(argumentsin, (const char *)parse, ((int)strlen(parse)-1));
+            memmove (argumentsin, argumentsin+1, strlen (argumentsin));
+            arg = strtok(argumentsin, " ");
+            
+            for(i; i < numspace; i++){
+            
+            }
+            
+            printf("arguments: \"%s\"\n", arguments);
             strncpy(command, (const char *)input, (spaceloc -1));
         }
         
@@ -50,7 +63,7 @@ int main() {
         pid_t pid;
 
         if (!strcmp(command, exit)) {
-           running = 0;
+           running = 1;
            printf("running is now %d\n", running);
         }
         
@@ -67,8 +80,9 @@ int main() {
         } else if (pid == 0) {
             printf("Running...\n");
             
-            if(strcmp(arguments, "")){
-                execlp(command, command, &arguments, NULL);
+            if(strcmp(argumentsin, "")){
+                printf("has arguments \"%s\"\n", argumentsin);
+                execlp(command, command, argumentsin, NULL);
             } else {
                 execlp(command, command, NULL);
             }
